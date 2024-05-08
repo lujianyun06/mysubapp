@@ -28,7 +28,7 @@ export async function mount(props) {
     render(props)
 }
 export async function unmount() {
-    instance.$destroy()
+    instance.unmount
     instance.$el.innerHTML = ''
     instance = null
 }
